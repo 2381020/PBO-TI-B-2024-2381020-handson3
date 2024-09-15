@@ -1,12 +1,14 @@
 package handson1;
 
-public class WhileLoop {
+public class DoWhile {
     public static void main(String[] args) {
+
         String[] kumpulanBuah = {"Apel", "Pisang", "Mangga", "Jeruk", "Durian", "Anggur"};
         int counter = 0;
-        while (counter < kumpulanBuah.length) {
+        do{
             System.out.println("Elemen ke" + (counter + 1) + "Adalah : " + kumpulanBuah[counter]);
-            counter ++;
-        }
+            counter++;
+        }while (counter < kumpulanBuah.length);
+
     }
 }
